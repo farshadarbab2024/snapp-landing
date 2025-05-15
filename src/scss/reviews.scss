@@ -1,0 +1,128 @@
+@import "./variables.scss" ;
+
+$arrow_button_width: 50px ;
+
+
+#reviews_container{
+    display: flex ;
+    position: absolute ;
+    left: 0 ;
+    gap: 1rem ;
+
+}
+
+#review_section{
+    width: 100% ;
+    height:  21rem ;
+    position: relative; 
+    margin-top: $margin-top3 ;
+    overflow: hidden ;
+}
+
+.review-card{
+    border: 1px solid #d0d1d9 ; 
+    border-radius: 1.1rem ;
+    padding: 1.6rem 1.2rem ;
+    width: calc($containers-width * 1vw * 0.9) ;
+    transition: $transition ;
+    margin-top: 3px; //avoid hidding top border
+}
+
+.review_img{
+    width: 3.9rem ;
+    border-radius: 50% ;
+    border: 0.26rem solid white ;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2) ;
+}
+
+.fullname_img_div{
+    display: flex ;
+    gap: 1.1rem ;
+    align-items: center ;
+
+}
+
+.review_fullname{
+    color: $text-color ;
+    font-size: $title2_size ;
+}
+
+.review-text{
+    font-size: $small-size ;
+    color: $title-color ;
+    line-height: 1.6;
+}
+
+#arrow_buttons{
+    width: $arrow_button_width * 2.17 ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    margin: auto ;
+    margin-top: $margin-top4 ;
+    position: absolute ;
+    bottom: 1rem ;
+    right: 50% ;
+    transform: translateX(50%) ;
+}
+
+.arrow-button{
+    width: $arrow_button_width ;
+    height: $arrow_button_width ;
+    border-radius: 50% ;
+    background-color: $lightblue ;
+    cursor: pointer ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+
+}
+
+.arrow-button:hover{
+    background-color: #d3e0f8 ;
+}
+
+.disable-arrow-button{
+    background-color: rgb(206, 206, 206)  !important ;
+    cursor: default; 
+}
+
+.disable-arrow-button:hover{
+    background-color: rgb(206, 206, 206)  ;
+}
+
+.disable-arrow-button > svg{
+    stroke: $text-color !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .review-card{
+        width: calc($containers-width * 1vw * 0.9/2) !important ; // halve the width
+        padding-top: 1rem ;
+        padding-bottom: 1rem ;  
+    }
+
+    .review-text{
+        line-height: 1.7 ; 
+        font-size: 0.75rem ;
+    }
+
+    .review_fullname{
+        font-size: $text-size;
+    }
+
+    #arrow_buttons{
+        display: none ;
+    }
+
+    #review_section{
+        height: 19rem ;
+    }
+
+}
+
+@media screen and (min-width: 1025px){
+    #arrow_buttons{
+        display: none ; 
+    }
+}

@@ -1,0 +1,44 @@
+@import "./variables.scss" ;
+
+.feature_div{
+    border-radius: 1.8rem ; 
+    width: 100% ;
+    border: 2px solid $lightblue ;
+    padding: 1.5rem 1rem ;
+    margin-top: $margin-top3 !important  ;
+}
+
+.feature_img{
+    width: 3.8rem ;
+    padding: 0.3rem ;
+}
+
+.feature_title{
+    font-size: 1.2rem ;
+    color: $title-color ;
+    font-weight: bold ;
+
+}
+
+.feature_div_top{
+    display: flex ;
+    align-items: center ;
+}
+
+.feature-description{
+    color: $text-color ;
+    font-size: $text-size ;
+    margin-top: $margin-top2 ;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .feature_div{
+        width: 17rem ;
+        max-width: 100% ; 
+        margin: auto ;
+    }
+
+    .feature-description{
+        font-size: $text-size * 0.87 ;
+    }
+}

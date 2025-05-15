@@ -1,0 +1,84 @@
+@import './variables.scss' ;
+
+#phone_input{
+    padding: 13px ;
+    border-radius: 8px ;   
+    direction: ltr ; 
+    border: 1px solid $text-color ; 
+    width: 100% ; 
+    font-size: $fixed_text_size ; 
+}
+
+#phone_input::placeholder{
+    opacity: 0 ; 
+}
+
+#phone_input:focus::placeholder{
+    opacity: 1;
+}
+
+#phone_input:focus{
+    border-color: black ; 
+    outline: 1px solid black ; 
+}
+
+#phone_input:focus + #phone_input_label{
+    top: 0 ; 
+    font-size: $fixed_small_size ; 
+    color: black ;
+}
+
+#phone_input:not(:placeholder-shown) + #phone_input_label{
+    top: 0 ; 
+    font-size: $fixed_small_size ; 
+}
+
+#phone_input_div{
+    width: 100% ;
+    margin: auto ; 
+    margin-top: 2rem ; 
+    position: relative; 
+
+    &.phone-input-div-has-value #phone_input{
+        padding-left: 3rem ; 
+    }
+
+    &.phone-input-div-has-value #clean_phone_input_div{
+        display: flex ; 
+    }
+}
+
+#phone_input_label{
+    position: absolute ;
+    top: 50% ; 
+    right: 0.8rem ; 
+    transform: translateY(-50%) ; 
+    cursor: text ; 
+    background-color: white ;
+    border-radius: 5px ;
+    padding: 0.2rem 0.4rem ;
+    transition: 0.15s ; 
+}
+
+#clean_phone_input_div{
+    width: 2.2rem ;
+    height: 2.2rem ; 
+    cursor: pointer ; 
+    position: absolute ; 
+    top: 50% ; 
+    left: 0.4rem ; 
+    transform: translateY(-50%) ;  
+    display: none ;
+    justify-content: center ;
+    align-items: center ; 
+    border-radius: 100rem ;
+}
+
+#clean_phone_input_div:hover{
+    background-color: rgb(244, 244, 244) ;
+}
+
+#clean_phone_input_img{
+    width: 1.2rem ;
+    height: 1.2rem ;
+}

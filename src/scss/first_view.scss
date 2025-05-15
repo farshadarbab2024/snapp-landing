@@ -1,0 +1,24 @@
+@import './variables.scss' ;
+
+
+#register_form_div{
+    width: $width1 * 1rem ; 
+    margin: auto ; 
+}
+
+#register_button{
+    background-color: $main-blue ;
+    color: white ; 
+    width: 100% ; 
+    margin-top: $margin-top3 ; 
+    border: none ; 
+    padding: 13px 0rem ; 
+    border-radius: 10px ; 
+    font-size: $fixed_text_size ; 
+    font-family: "Dana";
+    cursor: pointer ; 
+}
+  
+#register_button:hover{
+    background-color: $second-blue ;
+}

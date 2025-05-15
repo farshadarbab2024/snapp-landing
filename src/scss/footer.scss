@@ -1,0 +1,24 @@
+@import './variables.scss' ;
+
+.footer_text{
+    color: $lightblue ;
+    text-align: center ;
+    font-size: $fixed-small-size ; 
+}
+
+footer{
+    background-color: $title-color;
+    width: 100%; 
+    padding: 10px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 20px ;
+}
+
+#farshad_arbab_picture{
+    border-radius: 50% ;
+    width: 30px ;
+    height: 30px ;
+}
+

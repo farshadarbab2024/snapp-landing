@@ -1,0 +1,112 @@
+@import './variables.scss' ; 
+
+*{
+  padding: 0 ;
+  margin: 0 ; 
+  box-sizing: border-box ; 
+}
+
+html{
+  font-size: 100% ; 
+}
+
+body{
+  padding: 0 !important ;
+  padding-top: 3rem !important ;
+  font-family: "Dana", "sans-serif";
+}
+
+.white_section{
+  width: $containers-width * 1% ;
+  margin: auto ; 
+}
+#section3_container{
+  width: $containers-width * 1% ;
+  margin: auto ;
+}
+
+main{
+  width: 100% ;
+}
+
+.text-font{
+  font-size: $text-size ; 
+  color: $text-color ; 
+}
+
+.fixed-text-font{
+  font-size: $fixed_text_size ;
+  color: $text-color ;
+}
+
+.title{
+  font-size: $title_size ;
+  color: $title-color ; 
+  font-weight: 900 ;
+}
+
+.title2{
+  font-size: $title2_size ;
+  color: $dark-gray ;
+  font-weight: 500 !important;
+}
+
+.margin-top1{
+  margin-top: $margin-top1 !important ; 
+}
+
+.margin-top2{
+  margin-top: $margin-top2 !important ;
+}
+
+.margin-top3{
+  margin-top: $margin-top3 !important ;
+}
+
+.margin-top4{
+  margin-top: $margin-top4 !important ;
+}
+.margin-top8{
+  margin-top: $margin-top8 !important ; 
+}
+
+.text-center{
+  text-align: center ;
+  display: block ; 
+}
+
+.bold900{
+  font-weight: 900 !important;
+}
+
+.display-block{
+  display: block ; 
+}
+
+.color-lightblue{
+  color: $lightblue !important ; 
+}
+
+.small-font{
+  font-size: $small-size ;
+  color: $text-color ;
+}
+
+.fixed-small-font{
+  font-size: $fixed_small_size ; 
+  color: $text-color ; 
+}
+
+.text-align-justify{
+  text-align: justify ;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px){
+  html{
+    font-size: 140% ; 
+  }
+}
+
+@media screen and (min-width: 1025px){
+
+}

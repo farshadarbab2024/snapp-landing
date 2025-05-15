@@ -1,0 +1,153 @@
+@import './variables.scss' ;
+
+$vehicle_div_width: 30% ; 
+
+// cricle before li in documents section
+$documents-ul-li-top: 0.75rem ;
+$documents-li-small-circle-width: 0.5rem ;
+$documents-li-big-circle-width: 1rem ;
+
+#vehicle_select{
+    width: 21rem ;
+    max-width: 100% ;
+    margin: auto ;
+    margin-top: 1rem ;  
+}
+
+#vehicle_select_top{
+    width: 100% ;
+    height: 4.8rem ; 
+    display: flex ;
+    justify-content: space-between;
+
+
+}
+
+.vehicle_div{
+    width: $vehicle_div_width ; 
+    height: 100% ; 
+    position: relative ; 
+    border-radius: 10px ; 
+    padding: 0.3rem 1rem ;
+    opacity: 0.5 ;
+    border-radius: 8px ; 
+    cursor: pointer ; 
+    background-color: white ; 
+    transition: $transition ; 
+    border: 2px solid white ; 
+}
+
+.vehicle_div:hover{
+    background-color: $lightblue;
+}
+
+.vehicle_img{
+    width: 100% ;
+}
+
+.vehicle_name{
+    position: absolute ;
+    bottom: 0.2rem ;
+    right: 50% ; 
+    transform: translateX(50%) ; 
+    font-weight: 500 ; 
+    color: $title-color ;
+}
+
+body{
+    padding: 2rem ; //delete
+}
+
+.active_vehicle_div{
+    opacity: 1 ;
+    border: 2px solid $main-blue ; 
+    box-shadow: 3px 3px 15px rgba($main-blue, 0.15) ; 
+}
+
+.active_vehicle_div:hover{
+    background-color: white !important ; 
+}
+
+#vehicle_below_line{
+    background-color: $main-blue ;
+    height: 2px ; 
+    width: 4rem ;
+    border-radius: 10px ;
+    position: absolute ;
+    transform: translateX(50%) ; 
+    transition: $transition ; 
+    top: 0 ; 
+}
+
+.vehicle_below_line_car_position{
+    right: $vehicle_div_width / 2 ; 
+}
+
+.vehicle_below_line_motorcycle_position{
+    right: 50% ; 
+}
+
+.vehicle_below_line_truck_position{
+    right: 100% - ($vehicle_div_width / 2); 
+}
+
+#vehicles_register_documents{
+    border: 1px solid #ebecf2 ; 
+    border-radius: 20px ; 
+    min-height: 5rem ; 
+    margin-top: $margin-top2 ;
+    position: relative ; 
+    padding: 2rem 1.3rem ;
+}
+
+.documents_ul li{
+    list-style: none ;
+    position: relative;
+    padding-right: 1.6rem ;
+    color: $dark-gray ; 
+    margin-top: $margin-top3 ;
+    line-height: 1.6 ;
+    text-align: justify; 
+    font-size: $text-size ;
+}
+
+.documents_ul li::before {
+    content: "" ; 
+    position: absolute; 
+    right: 0; 
+    top: $documents-ul-li-top; 
+    transform: translateY(-50%); 
+    width: $documents-li-big-circle-width; 
+    height: $documents-li-big-circle-width; 
+    background-color: $lightblue; 
+    border-radius: 50%; 
+}
+
+.documents_ul li::after {
+    content: ""; 
+    position: absolute; 
+    right: ($documents-li-big-circle-width - $documents-li-small-circle-width)/2;
+    top: $documents-ul-li-top - ($documents-li-small-circle-width/2)  ;
+    width: $documents-li-small-circle-width; 
+    height: $documents-li-small-circle-width; 
+    background-color: #0048d9;
+    border-radius: 50%; 
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1024px){
+    #vehicle_select{
+        width: 33rem ;
+    }
+
+    #vehicle_select_top{
+        height: 5.9rem ;
+    }
+
+    .vehicle_div{
+        padding: 0.3rem 1.7rem ;
+    }
+
+    .documents_ul > li{
+        font-size: $text-size * 0.87 ;
+    }
+}
