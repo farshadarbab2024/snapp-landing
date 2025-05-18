@@ -31,22 +31,22 @@ function VehicleSelect(){
     return(
         <section className="white_section margin-top8">
             <h2 className="title text-center bold900">مدارک لازم برای ثبت‌نام</h2>
-            <span className="text-font text-center margin-top2">با انتخاب هر وسیله نقلیه می‌توانید مدارک لازم برای ثبت‌نام آن وسیله را ببینید.</span>
+            <span className="" id="vehicle_select_short_text">با انتخاب هر وسیله نقلیه می‌توانید مدارک لازم برای ثبت‌نام آن وسیله را ببینید.</span>
         
         
             <div id="vehicle_select">
                 <div id="vehicle_select_top">
                     <div className={activeVehicle==="car" ? "vehicle_div active_vehicle_div" : "vehicle_div"} onClick={() => setActiveVehicle("car")}>
                         <img src={vehicles["car"]["image"]} className="vehicle_img" alt={vehicles["car"]["alt"]} />
-                        <span className="text-font vehicle_name">{ vehicles["car"]["name"] }</span>
+                        <span className="vehicle-name">{ vehicles["car"]["name"] }</span>
                     </div>
                     <div className={activeVehicle==="motorcycle" ? "vehicle_div active_vehicle_div" : "vehicle_div"} onClick={() => setActiveVehicle("motorcycle")}>
                         <img src={vehicles["motorcycle"]["image"]} className="vehicle_img" alt={vehicles["motorcyc"]} />
-                        <span className="text-font vehicle_name">موتور</span>
+                        <span className="vehicle-name">موتور</span>
                     </div>
                     <div className={activeVehicle==="truck" ? "vehicle_div active_vehicle_div" : "vehicle_div"} onClick={() => setActiveVehicle("truck")}>
                         <img src="/images/truck.webp" className="vehicle_img" alt="وانت بار" />
-                        <span className="text-font vehicle_name">وانت</span>
+                        <span className="vehicle-name">وانت</span>
                     </div>
                 </div>
 

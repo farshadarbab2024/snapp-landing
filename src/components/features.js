@@ -22,16 +22,16 @@ function Features(){
         }
     ]
     return(
-        <section className="white_section">
+        <section id="features_section">
             <h2 className="title text-center margin-top8">مزایای اسنپ رانندگان</h2>
-            <span className="text-font text-center margin-top2">در اسنپ با هر وسیله نقلیه‌ای که دارید می توانید فعالیت کنید.</span>
+            <span id="features_short_text">در اسنپ با هر وسیله نقلیه‌ای که دارید می توانید فعالیت کنید.</span>
 
-            <div className="margin-top4">
+            <div id="features_container">
 
                 {
                     features.map((feature,index) => {
                         return(
-                            <div key={feature['title']} className="feature_div">
+                            <div key={feature['title']} className="feature_div" >
                                 <div className="feature_div_top">
                                     <img src={feature["img"]} className="feature_img" alt={feature["alt"]} />
                                     <h3 className="feature_title">{feature["title"]}</h3>

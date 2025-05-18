@@ -12,6 +12,7 @@ import Features from './components/features.js';
 import FAQ from './components/FAQ.js' ;
 import Reviews from './components/reviews.js' ;
 import Footer from './components/footer.js' ;
+import Test from './components/test.js' ; //delete
 
 
 function LandingPage(){
@@ -35,4 +36,4 @@ function LandingPage(){
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<LandingPage />);
+root.render(<LandingPage />); 

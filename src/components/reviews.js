@@ -80,10 +80,10 @@ function Reviews(){
         setCurrentIndex(currentIndex - 1) ;
     }
     return(
-        <section className="white_section">
+        <section id="reviews_container1">
             <h2 className="title text-center margin-top8">کاربران درباره اسنپ رانندگان چه گفته‌اند؟</h2>
-            <div id="review_section">
-                <div id="reviews_container"
+            <div id="reviews_container2">
+                <div id="reviews_container3"
                 onMouseDown={(e) => handleMouseDown(e)}
                 onMouseMove={(e) => handleMouseMove(e)}
                 onMouseUp={handleMouseUp}

@@ -31,7 +31,6 @@ function Slider() {
     return () => clearTimeout(timer) ; //cleanup to avoiding multiple timer in time
   }, [currentIndex])
   return(
-    <>
       <div id = "slider">
         <div id = "slides">
 
@@ -65,7 +64,7 @@ function Slider() {
           </div>
 
       </div>
-    </>
+
   ) ;
 }
 

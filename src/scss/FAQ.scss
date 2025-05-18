@@ -2,14 +2,16 @@
 
 #FAQ_container{
     width: 50rem ;
-    max-width: 94% ;
+    max-width: 91% ;
 }
 
 .question_div{
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.2) ;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2) ;
     border-radius: 12px ;
-    width: 100% ;
-    margin-top: 1rem ;
+    width: 43rem ;
+    max-width: 100% ;
+    margin: auto ;
+    margin-top: 1.2rem ;
 }
 .question{
     background-color: white ;
@@ -24,14 +26,15 @@
 }
 
 .question_p{
-    font-size: var(--title2-size) ;
+    font-size: $text-size ;
     line-height: 1.7 ;
     color: $title-color ; 
+    font-weight: 500 ;
 }
 
 .answer{
-    border-top: 1px solid var(--lightblue) ; 
-    transition: var(--transition) ;
+    border-top: 1px solid $lightblue ; 
+    transition: $transition ;
 }
 
 .answer-closed{
@@ -47,13 +50,13 @@
 
 .answer-p{
     transition: $transition ;
-    font-size: var(--text-size) ; 
+    font-size: $small-size ; 
     color: $text-color ; 
 }
 
 .answer-p-show{
     opacity: 1 ;
-    transition-delay: calc(var(--transition) + 0.05) ;
+    transition-delay: ($transition + 0.05) ;
 }
 
 .answer-p-hidden{
@@ -87,7 +90,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .question_p{
-        font-size: 0.83 * $title2_size ; 
+        font-size: 20px ; 
     }
 
     .question{
@@ -96,6 +99,28 @@
     }
 
     .answer-p{
-        font-size: 0.83 * var(--text-size) !important ; 
+        font-size: 18px !important ; 
+    }
+
+    #FAQ_container{
+        max-width: 94% ; 
+    }
+
+    .question{
+        padding: 14px 1.5rem ;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .question_p{
+        font-size: $desktop_medium_size ;
+    }
+
+    .answer-p{
+        font-size: $desktop_text_size !important ; 
+    }
+
+    .question{
+        padding: 12px 1.5rem ;
     }
 }

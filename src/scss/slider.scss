@@ -1,5 +1,7 @@
 @import "./variables.scss" ; 
 
+$slider_desktop_width: 25 ;
+
 *{
     margin: 0 ;
     padding: 0 ;
@@ -7,11 +9,10 @@
 }
 #slider{
     width: $width1 * 1rem ; 
-    height: $width1 * 1rem * 0.67 ;
+    height: #{ $width1 * 0.67}rem ;
     overflow: hidden ; 
-    margin: auto ;
     margin-top: 2rem ;
-    border-radius: 15px ; 
+    border-radius: 1rem ; 
     position: relative ;
 }
   
@@ -26,7 +27,7 @@
 }
   
 .slide{
-    width: $width1 * 1rem ;
+    width: #{ $width1 * 1 }rem ;
     height: 100% ;
     display: flex ;
     justify-content: center ;
@@ -43,23 +44,23 @@
 #slider_dots{
     direction: ltr ; 
     display: flex ;
-    justify-content: space-between;
-    width: 1.6rem ;
-    height: 0.7rem ;
+    justify-content: center;
+    width: 24px ;
+    height: 11px ;
     align-items: center ;
     border-radius: 100px ;
     background-color: rgba(255,255,255,0.2) ; 
     position: absolute ;
-    bottom: 0.5rem; 
+    bottom: 8px; 
     right: 50% ;
     transform: translateX(50%) ;
-    padding: 0rem 0.3rem ;
+    gap: 4px ;
 }
   
 .slider_dot{
     background-color: rgba(255,255,255,0.5) ;
-    width: 0.4rem ;
-    height: 0.4rem ;
+    width: 6px ;
+    height: 6px ;
     border-radius: 50% ;
 }
   
@@ -69,12 +70,24 @@
   
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #slider{
-        width: $width1 * 1rem * 1.2 ;
-        height: $width1 * 1rem * 0.804 ; // 0.804 = 0.67 * 1.2
+        width: #{ $width1 * 1 * 1.2 }rem ;
+        height: #{ $width1 * 1 * 0.804}rem ; // 0.804 = 0.67 * 1.2
     }
 
     .slide{
-        width: $width1 * 1rem * 1.2 ; 
+        width: #{ $width1 * 1 * 1.2 }rem ; 
+    }
+}
+
+@media screen and (min-width: 1025px){
+    #slider{
+        margin-top: 0 !important;
+        width: $slider_desktop_width * 1rem ;
+        height: $slider_desktop_width * 0.67rem ;
+    }
+
+    .slide{
+        width: $slider_desktop_width * 1rem ;
     }
 }
   

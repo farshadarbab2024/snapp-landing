@@ -1,11 +1,25 @@
 @import "./variables.scss" ;
 
+#features_short_text{
+    text-align: center ;
+    margin-top: $margin-top2 ;
+    display: block ; 
+    color: $text-color ; 
+    font-size: $text-size ;
+    font-weight: 500 ;
+}
+
+#features_section{
+    width: 91vw ;
+    margin: auto ;
+}
+
 .feature_div{
-    border-radius: 1.8rem ; 
-    width: 100% ;
+    border-radius: 24px ; 
     border: 2px solid $lightblue ;
     padding: 1.5rem 1rem ;
-    margin-top: $margin-top3 !important  ;
+    margin: 0 auto ; 
+    width: 100% ;
 }
 
 .feature_img{
@@ -14,7 +28,7 @@
 }
 
 .feature_title{
-    font-size: 1.2rem ;
+    font-size: $title2_size ;
     color: $title-color ;
     font-weight: bold ;
 
@@ -27,18 +41,75 @@
 
 .feature-description{
     color: $text-color ;
-    font-size: $text-size ;
+    font-size: $fixed-text-size ;
     margin-top: $margin-top2 ;
 }
 
+#features_container {
+    width: 100% ; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 100%));
+    gap: 16px;
+    margin-top: $margin-top3 ;
+    justify-content: center;
+    
+}
+  
+
 @media screen and (min-width: 768px) and (max-width: 1024px){
+
+    #features_container {
+        grid-template-columns:  repeat(auto-fit, minmax(370px, 370px));
+    }
+
     .feature_div{
-        width: 17rem ;
-        max-width: 100% ; 
-        margin: auto ;
+        padding: 2rem 1.5rem ;
     }
 
     .feature-description{
-        font-size: $text-size * 0.87 ;
+        font-size: $desktop_medium_size ;
     }
+
+    .feature_title{
+        font-size: 24px ;
+    }
+
+    #features_short_text{
+        font-size: 20px ;
+    }
+
+    .feature_img{
+        width: 3.3rem
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .feature_div{
+        padding: 1rem 1.5rem ;
+    }
+    #features_container {
+        grid-template-columns:  repeat(auto-fit, minmax(370px, 370px));
+    }
+
+    .feature_title{
+        font-size: $title2_size * 0.97 ;
+    }
+
+    #features_container{
+        column-gap: 25px ;
+    }
+
+    .feature-description{
+        font-size: $desktop_medium_size ;
+        line-height: 1.6 ;
+    }
+
+    #features_short_text{
+        font-size: 20px ; 
+    }
+
+    .feature_img{
+        width: 3.3rem
+    }
+
 }
