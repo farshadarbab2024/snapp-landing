@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/farshadarbab2024.github.io/snapp-landing/static/css/main.d78e0cce.css",
+    "main.js": "/farshadarbab2024.github.io/snapp-landing/static/js/main.1f7ab852.js",
+    "index.html": "/farshadarbab2024.github.io/snapp-landing/index.html",
+    "main.d78e0cce.css.map": "/farshadarbab2024.github.io/snapp-landing/static/css/main.d78e0cce.css.map",
+    "main.1f7ab852.js.map": "/farshadarbab2024.github.io/snapp-landing/static/js/main.1f7ab852.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d78e0cce.css",
+    "static/js/main.1f7ab852.js"
+  ]
+}
