@@ -13,17 +13,17 @@ function VehicleSelect(){
     const vehicles = {
         car: {
             name: "سواری",
-            image: "/images/car.webp", 
+            image: process.env.PUBLIC_URL + "/images/car.webp", 
             alt: "سواری", 
         }, 
         motorcycle: {
             name: "موتور", 
-            image: "/images/motorcycle.webp", 
+            image: process.env.PUBLIC_URL + "/images/motorcycle.webp", 
             alt: "پیک موتوری"
         }, 
         truck: {
             name: "وانت", 
-            image: "/images/truck.webp",
+            image: process.env.PUBLIC_URL + "/images/truck.webp",
             alt: "وانت"
         }
     } ;
@@ -45,7 +45,7 @@ function VehicleSelect(){
                         <span className="vehicle-name">موتور</span>
                     </div>
                     <div className={activeVehicle==="truck" ? "vehicle_div active_vehicle_div" : "vehicle_div"} onClick={() => setActiveVehicle("truck")}>
-                        <img src="/images/truck.webp" className="vehicle_img" alt="وانت بار" />
+                        <img src={vehicles["truck"]["image"]} className="vehicle_img" alt="وانت بار" />
                         <span className="vehicle-name">وانت</span>
                     </div>
                 </div>

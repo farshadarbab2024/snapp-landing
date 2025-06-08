@@ -34,7 +34,7 @@ function IncomeCalculator(){
             <div id="income_calculator">
                 <div id="income_value_div">
                     <span id="income_value">{income}</span>
-                    <img src="images/tomen.png" alt="تومان" id="tomen_img" />
+                    <img src={process.env.PUBLIC_URL + "/images/tomen.png"} alt="تومان" id="tomen_img" />
                 </div>
                 <span className="fixed-text-font margin-top3 display-block">روزی چند ساعت می‌خواهید کار کنید؟</span>
                 <div id="work_time_circles">

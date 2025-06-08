@@ -4,19 +4,19 @@ function Features(){
     const features = [
         {
             title: "مدیریت درآمد", 
-            img: "/images/money.webp" ,
+            img: process.env.PUBLIC_URL + "/images/money.webp" ,
             alt: "درآمد", 
             description: "با رانندگی در مسیرهای دلخواه و اوقات آزاد خود، درآمد بیشتری داشته باشید."
         }, 
         {
             title: "انواع طرح‌های تشویقی", 
-            img: "/images/gift.webp", 
+            img: process.env.PUBLIC_URL + "/images/gift.webp", 
             alt: "طرح های تشویقی", 
             description: "با رانندگی در اسنپ از طرح‌های تشویقی متنوع، پاداش‌ها و جوایز دوره‌ای برخوردار شوید."
         },
         {
             title: "رئیس خودتان باشید", 
-            img: "/images/clock.webp", 
+            img: process.env.PUBLIC_URL + "/images/clock.webp", 
             alt: "مدیریت زمان", 
             description: "در هر ساعت از شبانه‌روز و در هر مسیری که دوست دارید، پشت فرمان بنشینید و درآمدزایی کنید."
         }
