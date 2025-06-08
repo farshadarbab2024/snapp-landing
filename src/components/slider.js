@@ -8,7 +8,7 @@ function Slider() {
   const sliderOscillationRange = 50 ; // If the user moves the slide further, the slider will change
   const slides = [
     {
-        src: process.env.PUBLIC_URL + "/images/slider1.webp",
+        src: "%PUBLIC_URL%/images/slider1.webp",
         alt: "تا 64 میلیون درآمد ماهانه"
     },
     { 
