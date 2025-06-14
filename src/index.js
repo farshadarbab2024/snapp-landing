@@ -21,9 +21,9 @@ function LandingPage(){
         <>
             <main>
 
-                <h1>
+                <div>
                     تست فونت دانا ثبت نام
-                </h1>
+                </div>
 
                 <FirstView targetRef={targetRef} />
                 <VehicleSelect />
