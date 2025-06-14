@@ -21,10 +21,6 @@ function LandingPage(){
         <>
             <main>
 
-                <div>
-                    تست فونت دانا ثبت نام
-                </div>
-
                 <FirstView targetRef={targetRef} />
                 <VehicleSelect />
                 <IncomeCalculator />
