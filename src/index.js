@@ -21,7 +21,7 @@ function LandingPage(){
         <>
             <main>
 
-                <h1 className="text-font">
+                <h1>
                     تست فونت دانا ثبت نام
                 </h1>
 
