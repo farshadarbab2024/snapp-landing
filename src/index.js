@@ -20,6 +20,11 @@ function LandingPage(){
     return(
         <>
             <main>
+
+                <h1 className="text-font">
+                    تست فونت دانا ثبت نام
+                </h1>
+
                 <FirstView targetRef={targetRef} />
                 <VehicleSelect />
                 <IncomeCalculator />
