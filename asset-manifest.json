@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/snapp-landing/static/css/main.d78e0cce.css",
+    "main.css": "/snapp-landing/static/css/main.3878bf06.css",
     "main.js": "/snapp-landing/static/js/main.bc6d8882.js",
     "index.html": "/snapp-landing/index.html",
-    "main.d78e0cce.css.map": "/snapp-landing/static/css/main.d78e0cce.css.map",
+    "main.3878bf06.css.map": "/snapp-landing/static/css/main.3878bf06.css.map",
     "main.bc6d8882.js.map": "/snapp-landing/static/js/main.bc6d8882.js.map"
   },
   "entrypoints": [
-    "static/css/main.d78e0cce.css",
+    "static/css/main.3878bf06.css",
     "static/js/main.bc6d8882.js"
   ]
 }
