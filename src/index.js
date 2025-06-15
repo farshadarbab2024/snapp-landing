@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import React, { useRef } from 'react';
 
 import './scss/index.scss'; 
+import './scss/dana-font-import.scss' ; 
 
 import FirstView from './components/first_view.js' ;
 import VehicleSelect from './components/vehicle_select.js' ; 
